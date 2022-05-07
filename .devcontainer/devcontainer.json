@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/docker-existing-docker-compose
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+	"name": "Tauri Dev container",
+
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.yml"
+	],
+
+	"service": "ubuntu",
+
+	"workspaceFolder": "/workspace",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {},
+
+	"extensions": [
+		"matklad.rust-analyzer",
+		"vadimcn.vscode-lldb",
+		"bungcip.better-toml",
+		"serayuzgur.crates",
+		"Vue.volar"
+	],
+	
+	"postCreateCommand": "rustup component add rustfmt",
+}
