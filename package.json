@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.0-rc.4",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-color": "^2.8.1",
+    "vue-colour-picker": "^0.0.5",
+    "vue-gpickr": "^0.4.2",
+    "vue3-colorpicker": "^2.0.4"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.0-rc.9",
